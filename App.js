@@ -18,7 +18,8 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+firebase.analytics().logEvent('notification_received');
+
 
 // import the different screens
 import Loading from "./screens/Loading";
